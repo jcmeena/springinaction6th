@@ -1,0 +1,10 @@
+h1 > div > img {
+  width: 50px;
+  height : 50px;
+  max-height: 100%;
+  max-width: 100%;
+  block : inline;
+}
+.validationError{
+color:red;
+}
