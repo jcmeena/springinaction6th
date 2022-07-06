@@ -1,13 +1,10 @@
-package tacos.domain;
+package tacos.domain.converters;
 
-import ch.qos.logback.classic.Logger;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
+import tacos.domain.Ingredient;
 import tacos.repositories.IngredientRepository;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @Component
 @Slf4j

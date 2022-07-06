@@ -1,6 +1,8 @@
 package tacos.domain;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
@@ -10,8 +12,10 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@Table
 public class TacoOrder {
 
+    @Id
     private Long id;
     private Date placedAt = new Date();
 
